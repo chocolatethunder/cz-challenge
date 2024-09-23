@@ -1,5 +1,6 @@
 import { Package, PackageData, Product } from '../types';
 import { packageList, productList } from '../data/model';
+import generateProductItemCounts from './generateProductItemCounts';
 
 const buildPackageData = (packageList: Array<Package>): Array<PackageData> => {
   return packageList.map((packageProd: Package) => {
@@ -9,29 +10,9 @@ const buildPackageData = (packageList: Array<Package>): Array<PackageData> => {
       }
     );
 
-    const prodItemCount = products.reduce((acc, product) => {
-      if (acc.get(product.id)) {
-        acc.set(product.id, (acc.get(product.id) ?? 0) + 1);
-      } else {
-        acc.set(product.id, 1);
-      }
-      return acc;
-    }, new Map<string, number>());
-
-    const updatedProductList = products
-      .map((product) => {
-        return {
-          ...product,
-          itemCount: prodItemCount.get(product.id) ?? 0,
-        };
-      })
-      .filter((value, index, self) => {
-        return index === self.findIndex((product) => product.id === value.id);
-      });
-
     return {
       ...packageProd,
-      contents: updatedProductList,
+      contents: generateProductItemCounts(products),
     };
   });
 };
