@@ -6,7 +6,7 @@ dotenv.config();
 
 const server = http.createServer(app);
 
-server.listen(process.env.PORT);
+server.listen(process.env.PORT || '8000');
 
 server.on('listening', () => {
   console.log('Listening on port ' + process.env.PORT);
