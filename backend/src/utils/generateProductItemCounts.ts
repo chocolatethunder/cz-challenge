@@ -1,5 +1,9 @@
 import { Product } from '../types';
 
+/*
+ * This takes a list of Products and generates an item count for each Package. This will be added
+ * to the OrderData object for further analysis.
+ */
 const generateProductItemCounts = (products: Array<Product>) => {
   const prodItemCount = products.reduce((acc, product) => {
     if (acc.get(product.id)) {
