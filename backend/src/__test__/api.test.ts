@@ -1,6 +1,19 @@
 import request from 'supertest';
 import app from '../app';
 
+describe('Standard Endpoints', () => {
+  it('GET / - should return 200', async () => {
+    const response = await request(app).get('/');
+
+    expect(response.status).toBe(200);
+  });
+  it('GET /doesnt-exist - should return 404', async () => {
+    const response = await request(app).get('/doesnt-exist');
+
+    expect(response.status).toBe(404);
+  });
+});
+
 describe('Pick API Endpoint', () => {
   it('GET /pick - should return list of items to pick', async () => {
     const response = await request(app).get('/order/pick');
