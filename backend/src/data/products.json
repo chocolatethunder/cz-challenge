@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "f80e6ce9-675a-4d5a-9d17-7212d01f1720",
+      "name": "Red Roses Bouquet"
+    },
+    {
+      "id": "76d65ad2-a623-4131-86ab-b9559cd0c6c6",
+      "name": "Box of chocolates"
+    },
+    {
+      "id": "be87472b-4908-4a7d-8aaa-401ffda30f67",
+      "name": "Love card"
+    },
+    {
+      "id": "c1ac7231-adbd-40a8-b885-e76c7d75ff30",
+      "name": "Women's perfume"
+    },
+    {
+      "id": "cb4a7077-6893-4c26-a7be-444c0b9dc0a8",
+      "name": "Birthday cupcake"
+    },
+    {
+      "id": "c51f23ec-ae51-481f-8db1-d52e875a9d89",
+      "name": "$100 Visa Gift Card"
+    },
+    {
+      "id": "d37646f3-1712-4c9b-a879-31fc6eb72d8c",
+      "name": "Birthday card"
+    },
+    {
+      "id": "9a151b6d-ac35-4635-97be-2b2703b836cf",
+      "name": "Bottle of wine"
+    },
+    {
+      "id": "7ca2921f-ee9e-43d0-8186-d3a231dee154",
+      "name": "Fruit basket"
+    },
+    {
+      "id": "09847171-5da2-40b1-9853-a3b12a586188",
+      "name": "Pen"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "packages": [
+    {
+      "id": "22f4e926-21ee-4f89-a8ee-25d8e88ca83b",
+      "packageName": "Valentines Box",
+      "contents": [
+        "f80e6ce9-675a-4d5a-9d17-7212d01f1720",
+        "76d65ad2-a623-4131-86ab-b9559cd0c6c6",
+        "be87472b-4908-4a7d-8aaa-401ffda30f67",
+        "c1ac7231-adbd-40a8-b885-e76c7d75ff30"
+      ],
+      "price": 299.99
+    },
+    {
+      "id": "521e56d5-6567-4756-830b-a4006abba092",
+      "packageName": "Birthday Box",
+      "contents": [
+        "cb4a7077-6893-4c26-a7be-444c0b9dc0a8",
+        "c51f23ec-ae51-481f-8db1-d52e875a9d89",
+        "d37646f3-1712-4c9b-a879-31fc6eb72d8c"
+      ],
+      "price": 149.99
+    },
+    {
+      "id": "4b58582b-f545-48b9-9b16-c917b055b770",
+      "packageName": "Client Gift Box",
+      "contents": [
+        "9a151b6d-ac35-4635-97be-2b2703b836cf",
+        "7ca2921f-ee9e-43d0-8186-d3a231dee154",
+        "09847171-5da2-40b1-9853-a3b12a586188"
+      ],
+      "price": 199.99
+    }
+  ]
+}
