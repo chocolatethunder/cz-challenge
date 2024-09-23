@@ -1,9 +1,10 @@
 import { Router } from 'express';
+import pickController from './pick/pick.controller';
+import packController from './pack/pack.controller';
 
 const mainRouter = Router();
 
-mainRouter.get('/', (_req, res) => {
-  return res.status(200).send('Hello World!');
-});
+mainRouter.get('/pick', pickController);
+mainRouter.get('/pack', packController);
 
 export default mainRouter;
